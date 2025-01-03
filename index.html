@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <title>Pravin Balaji Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+                <span>Pravin Balaji K N</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#projects">Projects</a></div>
+                <div class="link contact-btn" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#contact">Contact </a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="main-container">
+            <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+                <img src="main.png" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration="1000" data-aos-delay="800" class="typewriter-text">Hey I'm <span>Pravin Balaji K N </span></h1>
+                <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000"> Driven by a passion for technology and a constant desire to learn and create impactful solutions.</p>
+                <br>
+                <div class="btn" data-aos="zoom-out-left" data-aos-duration="1000" data-aos-delay="1300">
+                    <a href="https://drive.google.com/file/d/1TdVhwq3LxNhzYjdZn-SNyn0MgowMX24e/view?usp=drivesdk" target="_blank" class="download-cv">Get My CV</a>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-container">
+            <h2>About Me</h2>
+            <p>Hello! I'm Pravin Balaji a Mechanical Engineer with a profound interest in IT solutions, I am particularly captivated by the dynamic fields of development and front-end technologies. I am eager to bridge the gap between engineering and innovative IT practices, leveraging cutting-edge methodologies to drive impactful solutions. With a solid foundation in engineering and an expanding proficiency in technology, I am actively seeking opportunities within the IT sector to further cultivate my expertise and contribute meaningfully to groundbreaking projects.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="skills-container">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <div class="skill-card" data-aos="zoom-in" data-aos-duration="1000">
+                    <i class="fa-brands fa-html5"></i>
+                    <h3>HTML</h3>
+                    <p>Experienced in creating structured web pages with semantic HTML elements.</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <p>Proficient in styling and designing responsive and visually appealing web pages.</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                    <i class="fa-brands fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Skilled in writing dynamic scripts to enhance user interactivity on web pages.</p>
+                </div>
+                <div class="skill-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="600">
+                    <i class="fa-brands fa-python"></i>
+                    <h3>Python</h3>
+                    <p>Skilled in Python programming for development and data analysis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="projects-container">
+            <h2>Projects</h2>
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1000">
+                <h3>Product Landing Page</h3>
+                <p>A landing page for a product is a single-page web application designed to drive user actions like purchases or sign-ups. Built using HTML, CSS, and JavaScript, it includes a responsive layout with key sections such as a hero banner, product features, benefits, testimonials, and a clear call-to-action (CTA). The project emphasizes technical skills in front-end development, user interface (UI) design, and optimizing user experience (UX), making it a strong addition to a professional portfolio. </p>
+            </div>
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                <h3>Website Portfolio</h3>
+                <p>
+                    A portfolio website is a personal web application showcasing skills, projects, and achievements to potential employers or clients. Developed using HTML, CSS, and JavaScript, it features a responsive and visually appealing layout with sections like an introduction, about, projects, and contact details. This project highlights expertise in front-end development, clean design principles, and interactive elements, serving as a professional digital resume for showcasing technical proficiency.</p>
+            </div>
+            <div class="project-card" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="400">
+                <h3>Bilingual Story Generator</h3>
+                <p>A Bilingual Story Generator is a web application that generates stories based on user prompts and converts them into audio in two languages. Built using HTML, CSS, and JavaScript for the front-end, it integrates text-to-speech and multilingual support to enhance accessibility and engagement. This project demonstrates skills in front-end development, user interaction, and implementing audio and language processing features, making it a unique and versatile addition to a professional portfolio.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="contact-container">
+            <h2>Contact via</h2>
+            <div class="social-links">
+                <a href="https://github.com/bala98812/project1/new/main/project1" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/pravin-balaji-k-n?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
+                <a href="mailto:bala98812@gmail.com"><i class="fa-solid fa-envelope"></i> E-mail</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({offset:0});
+    </script>
+    <script>
+        function hamburg(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(0px)"
+        }
+        function cancel(){
+            const navbar = document.querySelector(".dropdown")
+            navbar.style.transform = "translateY(-500px)"
+        }
+    </script>
+</body>
+</html>
