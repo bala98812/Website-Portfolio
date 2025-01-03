@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; /* Ensure smooth scrolling */
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, #ffffff, #d6dfe9);
+}
+
+/* Add margin to each section */
+section {
+    margin: 20px 0; /* Adjust the margin value as needed */
+}
+
+/* Rest of the styles for your portfolio */
+
+nav{
+    width: 100%;
+    height: 10vh;
+    position: sticky;
+}
+.nav-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    color: #333;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.logo span{
+    color: #607d8b;
+    text-shadow: 0 0 10px #607d8b;
+}
+.hamburg, .cancel{
+    cursor: pointer;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: #333;
+    font-size: 2rem;
+    display: none;
+}
+.nav-container .links {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.nav-container .links a{
+    position: relative;
+    font-size: 1.2rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transform: 0.3s linear;
+}
+.nav-container .links a::before{
+    position: absolute;
+    content: "";
+    bottom: -3px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #607d8b;
+    transition: 0.2s linear;
+}
+.nav-container .links a:hover::before{
+    width: 100%;
+}
+.nav-container .contact-btn{
+    background-color: transparent;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 2px solid #607d8b;
+    transition: 0.2s linear;
+}
+.nav-container .contact-btn a{
+    color: #fff;
+    transition: 0.3s linear;
+}
+.nav-container .contact-btn:hover, .nav-container .contact-btn:hover a{
+    background-color: #607d8b;
+    color: white;
+}
+.nav-container .links a:hover{
+    color: #607d8b;
+}
+.dropdown{
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    transform: translateY(-500px);
+    width: 100%;
+    height: auto;
+    backdrop-filter: brightness(40%) blur(3px);
+    box-shadow: 0 0 20px black;
+    transition: 0.2s linear;
+}
+.dropdown .links a{
+    color: white;
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 15px 0;
+    align-items: center;
+    transition: 0.2s linear;
+}
+.dropdown .links a:hover{
+    background-color: #607d8b;
+}
+section{
+    width: 100%;
+    height: auto;
+}
+.main-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.main-container .image{
+    z-index: -1;
+    width: 50%;
+}
+.main-container .image img{
+    width: 100%;
+}
+.main-container .content{
+    color: #333;
+    width: 50%;
+}
+.main-container .content h1{
+    font-size: 4rem;
+}
+.main-container .content .typewriter{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #607d8b;
+    padding-top: 10px;
+}
+.main-container .content p{
+    color: #607d8b;
+    padding-top: 20px;
+}
+.main-container .content .social-links{
+    margin-top: 30px;
+}
+.main-container .content .social-links a{
+    color: #607d8b;
+    font-size: 1.5rem;
+    margin: 0 10px;
+}
+.main-container .content .social-links a:hover{
+    color: #333;
+}
+
+.about-container, .skills-container, .projects-container, .contact-container{
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+.about-container h2, .skills-container h2, .projects-container h2, .contact-container h2{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.skills-container{
+    background-color: #f0f4f8;
+}
+.skills .skill-card{
+    width: 22%;
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+.skill-card i{
+    font-size: 3rem;
+    color: #607d8b;
+}
+.project-card{
+    background-color: #f0f4f8;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+footer .social-links a{
+    color: #fff;
+    font-size: 1.2rem;
+    margin: 10px;
+    text-decoration: none;
+}
+footer .social-links a:hover{
+    color: #607d8b;
+}
+
+.download-cv {
+    background-color: #607d8b;  /* Button background color */
+    color: white;               /* Text color */
+    padding: 10px 20px;         /* Padding for the button */
+    border: none;               /* Remove border */
+    border-radius: 5px;         /* Rounded corners */
+    font-size: 16px;            /* Font size */
+    cursor: pointer;           /* Cursor pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    text-decoration: none;
+}
+
+.download-cv:hover {
+    background-color: white;  /* Background color on hover */
+    color:#607d8b ;
+    border: #607d8b;
+}
+
+/* Adding styling for the typewriter animation */
+.typewriter span {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #333;
+    animation: typing 3s steps(30) infinite, blink-caret 0.7s step-end infinite;
+}
+
+/* Typewriter effect for "Hey I'm Amelia" */
+.typewriter-text {
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid #333;
+    animation: typing 3s steps(20) infinite, blink-caret 0.7s step-end infinite;
+}
+
+/* Typing effect keyframes */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 12ch; /* Adjust length for "Hey I'm Amelia" */
+    }
+}
